@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --violet: #6c5ce7;
+  --pink: #fc427b;
+  --gradient: linear-gradient(90deg, var(--violet), var(--pink));
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-out;
+}
+
+/* html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#fff;
+  border-radius: 5rem;
+}
+
+body{
+  background:var(--gradient);
+  padding:3rem 7%;
+} */
+
+
+
+.cont main {
+  padding: 2rem 7%;
+}
+
+.cont {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.cont .heading {
+  color: transparent;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.cont .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.cont .btn:hover {
+  background: var(--gradient);
+}
+
+.cont .headerr {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.cont .headerr .navbar a {
+  text-align: center;
+  text-decoration:none;
+  font-size: 1rem;
+  color: pink;
+}
+
+.cont .headerr .navbar a:hover {
+  color: var(--pink);
+}
+
+.cont #menu {
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: none;
+}
+
+.cont .homee {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont .homee .content {
+  flex: 1 1 40rem;
+  width: 50%;
+}
+
+.cont .homee .image {
+  width: 50%;
+  height: min-content;
+}
+
+.cont .homee .content h3 {
+  color: transparent;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 4rem;
+}
+
+.cont .homee .content p {
+  padding: 0.5rem 0;
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.cont #course {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  /* margin-top: 15%; */
+}
+
+.cont #course .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+}
+
+.cont #course .box img {
+  height: 20rem;
+  width: 100%;
+}
+
+.cont #course .box .amount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background: var(--pink);
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.cont #course .box .stars i {
+  color: var(--violet);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.cont #course .box h3 {
+  color: var(--pink);
+  font-size: 2.5rem;
+}
+
+.cont #course .box p {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.cont #course .icons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+
+.cont #course .icons p {
+  color: #666;
+  font-size: 1.3rem;
+}
+
+.cont #course .icons p i {
+  padding-right: 0.4rem;
+  color: var(--pink);
+}
+
+.cont #teacher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cont #teacher .box {
+  flex: 1 1 23rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.cont #teacher .box img {
+  height: 10rem;
+  width: 10rem;
+  margin: 0.5rem 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cont #teacher .box h3 {
+  color: var(--violet);
+  font-size: 2.5rem;
+}
+
+.cont #teacher .box span {
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+.cont #teacher .box p {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.cont #teacher .box .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background: var(--pink);
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+  color: #fff;
+}
+
+.cont #teacher .box .share a:hover {
+  background: var(--violet);
+}
+
+.cont #review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cont #review .box {
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  flex: 1 1 30rem;
+}
+
+.cont #review .box .student {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont #review .box .student .student-info {
+  display: flex;
+  align-items: center;
+}
+
+.cont #review .box .student i {
+  font-size: 6rem;
+  color: var(--pink);
+  opacity: 0.5;
+}
+
+.cont #review .box .student .student-info img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 7rem;
+  width: 7rem;
+  margin-right: 1.5rem;
+}
+
+.cont #review .box .student .student-info h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.cont #review .box .student .student-info span {
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+.cont #review .box .text {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.comp {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 13%;
+}
+
+.chil {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 300px;
+}
+.chil2 {
+  float: right;
+  width: 30%;
+  height: 150px;
+}
+.paren {
+  display: table;
+  clear: both;
+}
+/* Calender */
+.react-calendar {
+  width: 700px;
+  max-width: 100%;
+  background-color: rgb(131, 125, 125);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+.react-calendar__navigation button {
+  color: white;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.react-calendar--doubleView {
+  width: 800px;
+}
+.react-calendar--doubleView .react-calendar__viewcont {
+  display: flex;
+  margin: -0.5em;
+}
+.react-calendar--doubleView .react-calendar__viewcont > * {
+  width: 50%;
+  margin: 0.5em;
+}
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+}
+.react-calendar__navigation button {
+  min-width: 44px;
+  /* background: none; */
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+  padding: calc(0.75em / 0.75) calc(0.5em / 0.75);
+}
+.react-calendar__month-view__days__day--weekend {
+  /* color: #d10000; */
+  color: white;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: white;
+}
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+.react-calendar__tile {
+  max-width: 100%;
+  text-align: center;
+  padding: 0.75em 0.5em;
+  background: none;
+}
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+.react-calendar__tile--now {
+  /* background: #ffff76; */
+  background-color: #6f48eb;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+}
+.react-calendar__tile--hasActive {
+  background: #76baff;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+.react-calendar__tile--active {
+  background: #6f48eb;
+  color: white;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #1087ff;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 500px;
+}
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 300px;
+}
+.row1 {
+  align-items: center;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}

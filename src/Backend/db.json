@@ -1,0 +1,17 @@
+{
+  "sainath": [
+    {
+      "id": 1,
+      "name": "sai",
+      "emailid": "",
+      "password": ""
+    },
+    {
+      "Name": "sainath",
+      "Emailid": "sainath@gmail.com",
+      "Phonenumber": "9876543210",
+      "Newpassword": "ram",
+      "id": 2
+    }
+  ]
+}

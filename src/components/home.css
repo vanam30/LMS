@@ -1,0 +1,486 @@
+/* Style for home section */
+
+
+/*
+.home h1 {
+  font-size: 4rem;
+
+  color: rgb(238, 237, 237);
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style for home2 section 
+.home2 {
+  
+         width: 100%;
+  height: 100vh;
+  background-color:#377ab0;
+padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.home2 img {
+   width: 40%;
+        animation: imgUp 0.7s linear infinite alternate;
+
+}
+@keyframes imgUp {
+ 
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.home2 div {
+  width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        height: 100vh;}
+
+.home2 p {
+  font-size: 1.6rem ; 
+  line-height: 2rem;
+  word-spacing: 5px;
+  font-style:bold;
+  color:rgb(236, 235, 235);
+}
+
+/* Style for home3 section 
+.home3 {
+    width:100%;
+  background-color:#377ab0;
+    height: 120vh;
+    margin-top: -200px;
+    display: flex;
+}
+
+.home3 div {
+  max-width: 70%;
+  text-align: center;
+  height: 70vh;
+        background-color:rgb(237, 235, 235);
+        border-radius: 0 150px 150px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+}
+
+.home3 h1 {
+        text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+    color:  rgba(27, 27, 27, 0.661);
+ 
+}
+
+.home3 p {
+                padding: 3rem;
+            letter-spacing: 1px;
+            word-spacing: 6px;
+            line-height: 120%;
+            font:  100 1.4rem times;
+}
+
+/* Style for home4 section 
+.home4 {
+  background-color: #377ab0;
+  width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.home4>div{
+     background-color:  rgba(152, 152, 152, 0.691);
+        border-radius: 200px 0 0 200px;
+        width: 70%;
+        height: 70vh;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+.home4 >div>h1 {
+      color: white;
+            text-transform: uppercase;
+            width: 140px;
+            border-bottom: 2px solid white;
+            padding: 0.5rem;
+}
+
+.home4 article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home4 article div {
+   animation: imgUp 0.7s linear infinite alternate;
+                margin: 1rem;
+                height: 10rem;
+                width: 10rem;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color:  rgba(48, 48, 48, 0.661);
+                cursor: pointer;
+                transition: all 0.5s;
+
+}
+
+.home4 article div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(79, 73, 73, 0.2);
+   filter: invert(2);
+}
+
+.home4 article div svg {
+ font-size: 4rem;
+}
+
+.home4 article div p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.home {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.home main {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/home1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+
+.home main h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh;
+  background-color: #48bbfe;
+  padding: 400px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home2 img {
+  animation: imgUp 0.7s linear infinite alternate;
+  width: 40%;
+  border-radius: 5px;
+}
+@keyframes imgUp {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.home2 div {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.home2 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+.home3 {
+  display: flex;
+
+  padding: 5rem 0;
+  background-color: #48bbfe ;
+  height: 100vh;
+  margin-top: -200px;
+  display: flex;
+}
+
+.home3 div {
+  max-width: 70%;
+  text-align: center;
+  height: 70vh;
+  background-color: rgb(237, 235, 235);
+  border-radius: 0 150px 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.home3 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+
+.home4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #48bbfe;
+  padding: 5rem 0;
+}
+
+.home4 div {
+  width: 80%;
+  text-align: center;
+}
+.home4 article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.home4 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+
+.home4 article div {
+  animation: imgUp 0.7s linear infinite alternate;
+  margin: 1rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(48, 48, 48, 0.661);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.home4 article div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(79, 73, 73, 0.2);
+  filter: invert(2);
+}
+
+.home4 article div svg {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  fill: #666;
+}
+
+.home4 article div p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+*/
+
+/* Styling for the home section */
+.homee {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homee main {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/home1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+.homee main h1 {
+font-size: 6rem;
+font-weight: bold;
+text-align: center;
+margin: 3rem 0;
+display: flex;
+flex-direction: column;
+text-shadow: 2px 2px 2px #3f3f3f;
+color: #fefefe;
+letter-spacing: 0.1em;
+animation-name: glow;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes glow {
+from {
+text-shadow: 2px 2px 10px #060606, -2px -2px 10px #1a1717, 2px -2px 10px #fff, -2px 2px 10px #fff;
+}
+to {
+text-shadow: 2px 2px 20px #03383f, -2px -2px 20px #006775, 2px -2px 20px #00bcd4, -2px 2px 20px #00bcd4;
+}
+}
+.homee2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh;
+  background-color: #48bbfe;
+  padding: 400px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homee2 img {
+  animation: imgUp 0.7s linear infinite alternate;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@keyframes imgUp {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.homee2 div {
+  width: 100%;
+  margin-left: 2rem;
+}
+
+/* Styling for the paragraph in the text container */
+.homee2 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Styling for the container of the "who we are" section */
+.homee3 {
+  display: flex;
+  padding: 5rem 0;
+  background-color: #48bbfe;
+  height: 100vh;
+  margin-top: -200px;
+  display: flex;
+}
+
+.homee3 div {
+  max-width: 70%;
+  text-align: center;
+  height: 70vh;
+  background-color: rgb(237, 235, 235);
+  border-radius: 0 150px 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.homee3 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+/* Styling for the container of the "partners" section */
+.homee4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #48bbfe;
+  padding: 5rem 0;
+}
+
+.homee4 div {
+  width: 80%;
+  text-align: center;
+}
+.homee4 article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.homee4 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+
+.homee4 article div {
+  animation: imgUp 0.7s linear infinite alternate;
+  margin: 1rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(48, 48, 48, 0.661);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.homee4 article div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(79, 73, 73, 0.2);
+  filter: invert(2);
+}
+
+.homee4 article div svg {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  fill: #666;
+}
+
+.homee4 article div p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

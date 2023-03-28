@@ -1,26 +1,43 @@
-import React,{useState} from 'react'
+import React, { useEffect, useState } from "react"
+import axios from "axios"
+import { useNavigate, Link } from "react-router-dom"
 import pic from "../assets/home.jpeg"
-import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
 
-const Login = () => {
-  let [emailid,setemailid]=useState('')
-  let [password,setpassword]=useState('')
-  let[error,setError]=useState(false)
-  let Navigate=useNavigate();
+function Login() {
 
-  let handleSubmit=(e)=>{
+  const history = useNavigate();
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  let [error, setError] = useState(false)
+
+  async function submit(e) {
     e.preventDefault();
-    if(emailid.length===0||password.length===0){
-        setError(true)
+
+    try {
+
+      await axios.post("http://localhost:3000/login", {
+        email, password
+      })
+        .then(res => {
+          if (res.data === "exist") {
+            history("/overview")
+          }
+          else if (res.data === "notexist") {
+            alert("User have not sign up")
+          }
+        })
+        .catch(e => {
+          alert("wrong details")
+          console.log(e);
+        })
+
     }
-    if(emailid&&password)
-    {
-    console.log("email id: ",emailid,"\npassword: ",password)
-    Navigate("/overview");
+    catch (e) {
+      console.log(e);
+
     }
-    
-}
+
+  }
   return (
     <article>
       <div id="reg">
@@ -39,15 +56,12 @@ const Login = () => {
               <label htmlFor="">Email id: </label>{" "}
             </td>
             <td>
-              <input
-                type="email"
-                onChange={(e) => setemailid(e.target.value)}
-                placeholder="abc@gmail.com"
-                required="required"
-              />{" "}
+              <form action="POST">
+                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" />
+              </form>
             </td>
           </tr>
-          {error && emailid.length <= 0 ? (
+          {error && email.length <= 0 ? (
             <label id="error">Email id can't be Empty</label>
           ) : (
             ""
@@ -58,12 +72,9 @@ const Login = () => {
               <label htmlFor="">password: </label>
             </td>
             <td>
-              <input
-                type="password"
-                onChange={(e) => setpassword(e.target.value)}
-                placeholder="password"
-                required="required"
-              />
+              <form action="POST">
+                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" />
+              </form>
             </td>
           </tr>
           {error && password.length <= 0 ? (
@@ -71,14 +82,14 @@ const Login = () => {
           ) : (
             ""
           )}
-
           <br />
-          <tr id="abc">
-            <button onClick={handleSubmit}>LOGIN</button>
+          <td id="abc">
+            <form action="POST">
+              <input type="submit" onClick={submit} />
+            </form>
             <br />
-
             <Link to="/forget">Forget passoword</Link>
-          </tr>
+          </td>
         </table>
         <br />
 
